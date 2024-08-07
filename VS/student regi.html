@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Registration Form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 15px;
+            background-color: rgb(202, 199, 199);
+        }
+        #h1{
+            text-align: center;
+            text-decoration:3px rgb(32, 123, 148) underline;
+            color: rgb(164, 164, 16);
+        }
+        #h2{
+            text-align: center;
+           
+            color: rgb(226, 6, 83);
+            
+        }
+        img{
+            position: relative;
+            right: 400px;
+            float: right;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+            margin-left: 47%;
+            border-radius: 10px;
+        }
+        input[type=text]{
+            width: 100%;
+            padding: 8px 10px;
+        }
+        form{
+            background-color: white;
+            outline: 2px solid black;
+            width: 50%;
+            border: 1px solid black;
+            padding: 20px;
+            margin: auto;
+
+
+        }
+    </style>
+</head>
+<body>
+   <form >
+    <h1 id="h1">Mohan Babu University</h1>
+    <h2 id="h2">Student Registration Form</h2>
+    <hr>
+    <br>
+    <img src="./student.jpg" height="150px" width="150px" >
+    <p style="margin-top: 50px; margin-left: 20px;">Student Image</p>
+    <br><br><br> <br><br><br><br>
+    <label for="name">Student Name:
+        <input type="text" name="name" id="name" placeholder="Full Name">
+    </label><br><br>
+    <label for="father">Father's Name :
+        <input type="text" name="father" id="father" placeholder="Father's Full Name">
+    </label>
+    <br><br>
+    <label for="mother">Mother's Name :
+        <input type="text" name="mother" id="mother">
+    </label>
+    <br><br>
+    Gender:
+    <label for="male">
+        <input type="radio" name="gender" id="male">Male
+    </label>
+    <label for="female">
+        <input type="radio" name="gender" id="female">Female
+    </label>
+    <label for="Other">
+        <input type="radio" name="gender" id="Other">Other
+    </label>
+    <br><br>
+    <label for="dob">Date of Birth
+        <input type="date" name="dob" id="dob">
+    </label>
+    <br><br>
+    <label for="mail">Email
+        <input type="email" name="mail" id="mail">
+    </label>
+    <br><br>
+    Level:
+    <select>
+        <option value="B.Tech">B.Tech</option>
+        <option value="BCA">BCA</option>
+        <option value="M.Tech">M.Tech</option>
+        <option value="MCA">MCA</option>
+    </select>
+    <br><br>
+    Tel/Mobile:
+    <input type="text" name="mobile" id="mobile" placeholder="xxx xxx xxx">
+    <br><br>
+    <hr><hr>
+    <br><br>
+    <h3 style="text-align: center; color: aqua;font-weight: 900; text-decoration: wavy red underline;">Parmanent Address</h3>
+    <label for="state">State:
+        <input type="text" name="state" id="state" placeholder="state">
+    </label>
+    <br><br>
+    <label for="city">City:
+        <input type="text" name="city" id="city" placeholder="city">
+    </label>
+    <br><br>
+    <label for="zip">Zip code:
+        <input type="text" name="zip" id="zip">
+    </label>
+    <br><br>
+    <label for="mobile">Tel/Mobile:
+        <input type="text" name="mobile" id="mobile" placeholder="Tel/Mobile">
+    </label>
+    <br><br>
+    <hr><hr>
+    <br><br>
+    <h3 style="text-align: center; color: aqua;font-weight: 900;text-decoration: wavy red underline;">Temporary Address</h3>
+    <br><br>
+    <label for="address">Same as Permanent Address:
+        <input type="checkbox" name="tempaddress" id="tempaddress">
+    </label>
+    <br><br>
+    <label for="state">State:
+        <input type="text" name="state" id="state" placeholder="state">
+    </label>
+    <br><br>
+    <label for="city">City:
+        <input type="text" name="city" id="city" placeholder="city">
+    </label>
+    <br><br>
+    <label for="zip">Zip code:
+        <input type="text" name="zip" id="zip">
+    </label>
+    <br><br><br>
+    <label for="mobile">Tel/Mobile:
+        <input type="text" name="mobile" id="mobile" placeholder="Tel/Mobile">
+    </label>
+    <br><br>
+    <button type="button">Register</button>
+   </form>
+</body>
+</html>
