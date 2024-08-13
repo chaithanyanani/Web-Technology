@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Registration Form</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #72b7f4;
+        }
+        h2 {
+            color: #232729;
+            text-align: center;
+        }
+        form {
+            background-color: #bfddf7;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="file"] {
+            /* Customize file input appearance if needed */
+        }
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+    <form action="process_application.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="position">Position Applying For:</label>
+        <select id="position" name="position">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="radio" id="exp1" name="experience" value="1 years">
+        <label for="exp1">1years</label>
+        <input type="radio" id="exp1" name="experience" value="2-3 years">
+        <label for="exp1">2-3 years</label>
+        <input type="radio" id="exp2" name="experience" value="3+ years">
+        <label for="exp2">3+ years</label>
+
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea id="coverLetter" name="coverLetter" rows="4" placeholder="Write your cover letter"></textarea>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

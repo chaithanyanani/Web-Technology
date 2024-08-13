@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivate Account</title>
+    <style>
+        form{
+            border: 2px solid;
+            margin-left: 37%;
+            width: 400px;
+            height: 250px;
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline double;
+        }
+        button{
+            text-align: center;
+            margin-left: 30%;
+            background-color: rgb(22, 108, 108);
+        }
+    </style>
+</head>
+<body>
+    <h2>Deactivate Account</h2>
+    <form action="/deactivate" method="post">
+        <label for="user-id">User ID:</label>
+        <input type="text" id="user-id" name="user_id" required><br><br>
+        <label for="103">Password</label>
+        <input type="password" id="103"><br><br>
+
+        <label for="reason">Reason for Deactivation:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Deactivate Account</button>
+    </form>
+</body>
+</html>
