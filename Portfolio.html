@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio showcasing projects and contact information.">
+    <meta name="keywords" content="portfolio, web developer, projects, contact">
+    <meta name="author" content="Your Name">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-image: url(./back\ ground\ image.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+        header p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            background-image: url(./back\ ground\ image.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        nav a:hover {
+            color: rgb(234, 212, 14);
+            background-color: black;
+            padding: 5px;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px solid;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        img{
+            height: 150px;
+            width: 200px;
+            float: right;
+            border-radius: 50%;
+            margin-right: 200px;
+            transition: all 2s ease-in 0.5s;
+            
+        }
+        img:hover{
+            transform: scale(1.1);
+
+        }
+        #about{
+            text-align: justify;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(18, 19, 13);">MY PORTFOLIO:</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <img src="./Prakash.jpg" alt="">
+        <h2 style="color: rgb(238, 114, 226);">About Me:</h2>
+        <p>Hello!I am Uppu Chaithanya Nani. I am a  web developer with a passion for creating beautiful <br> and functional websites. 
+             I have experience with various technologies  including <br> HTML, CSS, JavaScript, and more. My goal is to build user-friendly and visually appealing web applications.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2 style="color: cornflowerblue;">Portfolio:</h2>
+        <div>
+            <h3>Project 1:Movie_DataBase</h3>
+            <p>Description of Project 1. This project is based on movies and thier cost.This is only basic Program.</p>
+            <a href="./movie_db.html">Movie_DataBase</a>
+        </div>
+        <div>
+            <h3>Project 2:MBU_website</h3>
+            <p>Description of Project 2. This project focused on creating just a wed page.In this code only HTML and CSS is used.</p>
+            <a href="./MBU_WEBSITE.html">MBU_website</a>
+        </div>
+        <div>
+            <h3>Project 3:LinkedIn</h3>
+            <p>Description of Project 3. This project is based on how to login into LinkedIn.This is multi web page program when we click on forgot password then it moves to another web page.When we want to return then click on back button. </p>
+            <a href="./linkedin.html">LinkedIn</a>
+    </section>
+
+    <section id="contact">
+        <h2 style="color: darkviolet;">Contact Me:</h2>
+        <p>If you'd like to get in touch, please send an email to <a href="mailto:uppuchaithanyanani@gmail.com">velpulaprakash1419@gmail.com</a>. I look forward to hearing from you!</p>
+        <p>&#x260E; Phone:9963581551</p>
+    </section>
+
+    <footer>
+        <p>&copy; Prakash. All rights reserved.</p>
+    </footer>
+</body>
+</html>
