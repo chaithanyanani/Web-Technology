@@ -1,0 +1,38 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="Form_DS1.html">
+        <fieldset>
+            <legend>Login Details</legend>
+            <label for="name">User Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="pswd">Password:</label>
+            <input type="password" id="pswd" name="pswd"><br><br>
+            <input type="submit" onclick="save()">
+            <input type="reset">
+        </fieldset>
+    </form>
+    <script>
+        function save()
+        {
+            if (typeof(Storage) !== "undefined") 
+            {
+                var x=document.getElementById("name").value;
+                localStorage.setItem("f1",x);
+                var y=document.getElementById("pswd").value;
+                localStorage.setItem("p1",y);
+              //  localStorage.clear();
+              alert(x);
+            }
+
+        }
+    </script>
+</body>
+</html>
